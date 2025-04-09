@@ -34,5 +34,5 @@ else
     echo "No routes found in routes directory."
 fi
 
-echo "Starting Ozone EIP Client Application in $ENV environment."
+echo "Starting kapasiki EIP Client Application in $ENV environment."
 java -cp "eip-client.jar" "-Dloader.path=routes/" org.springframework.boot.loader.PropertiesLauncher

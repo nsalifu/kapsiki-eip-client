@@ -5,7 +5,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-package com.ozonehis.eip;
+package net.kapsiki.eip;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Slf4j
 @PropertySource("classpath:eip-client.properties")
-@SpringBootApplication(scanBasePackages = "com.ozonehis.eip.*, ${eip.app.scan.packages}")
+@SpringBootApplication(scanBasePackages = "net.kapsiki.eip.*, ${eip.app.scan.packages}")
 public class Application {
 
     public static void main(final String[] args) {

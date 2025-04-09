@@ -9,9 +9,13 @@
 version: '3'
 services:
   eip-client:
-    container_name: ozone-eip-client
-    environment:
-        - EIP_PROFILE=dev
-    image: mekomsolutions/eip-client
+    container_name: kapsiki-eip-client
+#    environment:
+#        - EIP_PROFILE=dev
+    env_file:
+      - env/elis.env
+    image: kapsiki-eip-client:latest
     ports:
-      - "8085:8080"
+      - "8088:8080"
+    volumes:
+      - /Users/njiddasalifu/workspace/kds/DI/eip-openelis-openmrs/openelis-openmrs/target/eip-openelis-openmrs-1.0.0-SNAPSHOT.jar:/eip-client/routes/eip-openelis-openmrs-1.0.0-SNAPSHOT.jar

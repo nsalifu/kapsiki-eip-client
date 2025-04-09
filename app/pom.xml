@@ -11,7 +11,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.ozonehis</groupId>
+    <groupId>net.kapsiki</groupId>
     <artifactId>eip-client-parent</artifactId>
     <version>2.3.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
@@ -25,7 +25,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <start-class>com.ozonehis.eip.Application</start-class>
+    <start-class>net.kapsiki.eip.Application</start-class>
   </properties>
 
   <dependencies>
